@@ -1,0 +1,22 @@
+/* nav.css */
+.nav-list {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-list::after {
+  content: '';
+  position: absolute;
+  background-color: aqua;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -4px;
+  
+  transition: width 0.3s ease;
+}
+
+.nav-list:hover::after {
+  width: 100%;
+  padding: 0 10px;
+}

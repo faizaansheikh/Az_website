@@ -1,1 +1,1 @@
-export const bgcolor = ''
+export const bgcolor = '#071E4C'

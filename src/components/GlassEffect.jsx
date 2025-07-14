@@ -1,11 +1,11 @@
 import { title } from "process"
 import react from "react"
-const GlassEffect = ({children}) => {
+const GlassEffect = ({children,className}) => {
 
     return (
         <>
-            <div className="absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2">
-                <div className="backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg p-4 text-white max-w-md flex">
+            <div className={`${className} z-20 transform `}>
+                <div className="backdrop-blur-lg bg-[black]/10 border border-black/30 rounded-xl shadow-xl p-4 text-black max-w-md ">
                     {/* <h2 className="text-3xl font-bold mb-4">Glass Effect</h2> */}
                     {children}
                 </div>
