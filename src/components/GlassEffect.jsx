@@ -5,7 +5,7 @@ const GlassEffect = ({children,className}) => {
     return (
         <>
             <div className={`${className} z-20 transform `}>
-                <div className="backdrop-blur-lg bg-[black]/10 border border-black/30 rounded-xl shadow-xl p-4 text-black max-w-md ">
+                <div className="backdrop-blur-lg bg-[black]/10 border border-grey/20 rounded-xl shadow-xl p-2 w-auto flex justify-center items-center ">
                     {/* <h2 className="text-3xl font-bold mb-4">Glass Effect</h2> */}
                     {children}
                 </div>
