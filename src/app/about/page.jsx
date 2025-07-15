@@ -2,6 +2,9 @@ import GlassEffect from '../../components/GlassEffect'
 import React from 'react'
 import Expertise from './Expertise'
 import { bgcolor } from '../../utils'
+import KeyClients from './KeyClients'
+import Management from './Management'
+import TechnicaService from './TechnicaService'
 
 function About() {
     return (
@@ -22,12 +25,23 @@ function About() {
                     We have business partnership with a number of premier manufacturers and suppliers of scientific instrumentation around the globe. We are fully capable of meeting the challenges of providing scientific solutions to laboratories with latest technology, instrumentation and services in the technical, medical and industrial fields.
                 </p>
             </div>
-            <div style={{ backgroundImage: 'linear-gradient(to top, #3c3388ff, #13223fff, #040e31ff' }}>
-                <div className='mx-4 lg:mx-[120px] mb-[20px] mt-[60px] md:mt-[20px] text-white'>
+            <div style={{ backgroundImage: 'linear-gradient(to top, #191449ff, #13223fff, #040e31ff' }}>
+                <div className='mx-4 lg:mx-[120px] mb-[0px] mt-[60px] md:mt-[20px] text-white'>
 
                     <Expertise />
+
                 </div>
             </div>
+
+            <div className='mx-4 lg:mx-[120px] mb-[40px] mt-[40px] md:mt-[20px] '>
+                <TechnicaService />
+            </div>
+            <div style={{ backgroundImage: 'linear-gradient(to top, #191449ff, #13223fff, #040e31ff' }}>
+                <div className='mx-4 lg:mx-[120px] mb-[20px] md:mt-[20px] text-white'>
+                    <KeyClients />
+                </div>
+            </div>
+
 
         </>
     )

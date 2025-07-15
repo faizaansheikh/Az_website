@@ -18,39 +18,42 @@ function Expertise() {
         'Technical Training Instruments',
         'Laboratory Furniture, Project Management, Design & Consultancy',
     ]
+     
     return (
-        <div className='w-full h-[auto]  z-20 flex mb-10 py-12'>
-            <Row className='flex justify-center items-center'>
-                <Col
-                    md={24} lg={16} xl={14}
-                >
-                    <h2 className='text-4xl md:text-6xl text-center lg:text-left py-4'>Our Areas Of <br /> Expertise</h2>
-                    <div className='py-6 flex  flex-wrap justify-start items-center'>
-                        {
-                            items.map((x, i) => (
-                                <GlassEffect key={i} className={'text-wrap md:text-nowrap m-2 w-auto ' }>
-                                    {/* <div className='w-[10px] h-[10px] rounded-[100%] mx-2' style={{backgroundColor:bgcolor}}></div> */}
-                                    <div>{x}</div>
-                                </GlassEffect>
-                                // <li className='list-none text-nowrap bg-[grey] m-2 p-2 rounded-[5px]' key={i}>{x}</li>
-                            ))
-                        }
-                    </div>
-                </Col>
-                <Col
-                    md={24} lg={8} xl={10}
-                    className="relative w-full h-[500px] overflow-hidden md:mt-[80px] lg:mt-[0px] rounded-[30px]"
-                >
-                    <Image
-                        src={img}
-                        alt="Banner"
-                        fill
-                        className="object-cover md:object-cover"
-                    />
-                </Col>
-            </Row>
+        <>
+            <div className='w-full h-[auto]  z-20 flex mb-0 py-12'>
+                <Row className='flex justify-center items-center'>
+                    <Col
+                        md={24} lg={16} xl={14}
+                    >
+                        <h2 className='text-4xl md:text-5xl text-center lg:text-left py-4'>Our Areas Of <br /> Expertise</h2>
+                        <div className='py-6 flex  flex-wrap justify-start items-center'>
+                            {
+                                items.map((x, i) => (
+                                    <GlassEffect key={i} className={'text-wrap md:text-nowrap m-2 w-auto '}>
+                                        <div>{x}</div>
+                                    </GlassEffect>
+                                ))
+                            }
+                        </div>
+                    </Col>
+                    <Col
+                        md={24} lg={8} xl={10}
+                        className="relative w-full h-[500px] overflow-hidden md:mt-[80px] lg:mt-[0px] rounded-[30px]"
+                    >
+                        <Image
+                            src={img}
+                            alt="Banner"
+                            fill
+                            className="object-cover md:object-cover"
+                        />
+                    </Col>
+                </Row>
+            </div>
+
            
-        </div>
+        </>
+
     )
 }
 

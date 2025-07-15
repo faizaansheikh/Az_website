@@ -2,6 +2,7 @@ import Image from "next/image";
 import Home from "./home/page";
 import Navbar from "../components/Navbar";
 import About from "./about/page";
+import Partners from "./partners/page";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Page() {
   return (
@@ -12,6 +13,10 @@ export default function Page() {
 
       <div className="mt-[70px] md:mt-0">
         <About />
+      </div>
+      <div className="mt-[70px] md:mt-[30px]">
+
+        <Partners />
       </div>
 
       {/* <Navbar/> */}
