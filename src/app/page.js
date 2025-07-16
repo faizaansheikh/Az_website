@@ -2,7 +2,7 @@ import Image from "next/image";
 import Home from "./home/page";
 import Navbar from "../components/Navbar";
 import About from "./about/page";
-import Partners from "./partners/Products";
+import Partners from "./partners/Partners";
 import Products from "./products/Products";
 import Footer from "./footer/Footer";
 // import 'bootstrap/dist/css/bootstrap.min.css';
