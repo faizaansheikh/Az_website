@@ -21,14 +21,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-<<<<<<< HEAD
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={''} />
-=======
-        {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin /> */}
->>>>>>> fbaff59c6079472da53c28afefac3cea738a036a
         <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
       </head>
       <body
+       cz-shortcut-listen="true"
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
