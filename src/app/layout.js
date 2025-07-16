@@ -18,12 +18,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  if (typeof window !== undefined) {
-    <script>
-      AOS.init();
-    </script>
-
-  }
+  
   return (
     <html lang="en">
       <head>
@@ -41,7 +36,7 @@ export default function RootLayout({ children }) {
       >
         {children}
       
-       <AOSInitializer/>
+       {/* <AOSInitializer/> */}
       </body >
 
     </html>

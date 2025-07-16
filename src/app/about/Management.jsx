@@ -1,4 +1,3 @@
-'use client';
 import React from 'react'
 import { Card } from 'antd'
 import img from '../../images/home.jpg'

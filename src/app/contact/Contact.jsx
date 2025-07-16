@@ -17,7 +17,7 @@ function Contact() {
             {/* F4F4F4 */}
             <div className='bg-grey-200 w-[full] h-[auto] flex justify-around items-center flex-wrap'>
 
-                <div className=" relative w-[550px] h-[600px] m-2" data-aos="fade-left">
+                <div className=" relative w-[550px] h-[600px] m-2" >
                     <Image
                         src={img}
                         alt="Banner"
@@ -34,7 +34,7 @@ function Contact() {
 
 
 
-                <div className='bg-[#F4F4F4] border-2 rounded-[20px] border-black w-[620px] h-full p-6 shadow-2xl m-2' data-aos="fade-right">
+                <div className='bg-[#F4F4F4] border-2 rounded-[20px] border-black w-[620px] h-full p-6 shadow-2xl m-2'>
                     <h2 className='text-3xl'>We'd love to help</h2>
                     <p>Reach Out and we'll get in touch within 24 hours</p>
                     <form action="" onSubmit={handleSubmit}>

@@ -5,7 +5,7 @@ import React from 'react'
 function TechnicaService() {
     return (
         <div>
-            <div className='h-[400px]  px-[30px] lg:px-[200px] flex justify-center items-center flex-col' data-aos="fade-top-right">
+            <div className='h-[400px]  px-[30px] lg:px-[200px] flex justify-center items-center flex-col' >
 
                 <GlassEffect className='mb-4'>
                     NEED TO KNOW

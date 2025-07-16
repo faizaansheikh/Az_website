@@ -10,7 +10,7 @@ import TechnicaService from './TechnicaService'
 function About() {
     return (
         <>
-            <div className='h-[400px]  px-[30px] lg:px-[200px] flex justify-center items-center flex-col' data-aos="fade-down-left"> 
+            <div className='h-[400px]  px-[30px] lg:px-[200px] flex justify-center items-center flex-col' > 
 
                 <GlassEffect className='mb-4' >
                     NEED TO KNOW

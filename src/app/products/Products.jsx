@@ -83,7 +83,6 @@ function Products() {
                 {
                     products.map((x, i) => (
                         <Card
-                        data-aos="fade-left"
                             key={i}
                             style={{ width: 330, height: 380, border: '3px solid grey' }}
                             className='shadow-2xl'
