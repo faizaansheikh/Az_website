@@ -8,12 +8,12 @@ import About from '../about/page'
 export default function Home() {
   return (
     <>
-      <div className="relative w-full h-[80vh] md:h-[90vh] overflow-hidden">
+      <div className="relative w-full h-[80vh] md:h-[90vh] ">
         {/* Background Image */}
         <img
           src="https://az-scientificsolutions.com/wp-content/uploads/2018/05/banner3.jpg"
           alt="Banner"
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="absolute top-0 left-0 bottom-0 w-full h-full object-cover"
         />
 
         {/* Dark Overlay */}
