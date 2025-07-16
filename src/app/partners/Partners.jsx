@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import img from '../../images/home.jpg'
 import Image from 'next/image';
@@ -60,7 +61,7 @@ function Partners() {
             <div className='mt-12 flex justify-center items-center flex-wrap gap-10 md:mx-[200px]'>
                 {
                     partners.map((x, i) => (
-                        <div key={i} className='relative w-[320px]  h-[150px] border-2 border-[grey] rounded-[10px] transition-transform duration-300 hover:scale-110 shadow-xl'>
+                        <div key={i} className='relative w-[320px]  h-[150px] border-2 border-[grey] rounded-[10px] transition-transform duration-300 hover:scale-110 shadow-xl' data-aos="fade-right">
                             <a href={x.url} target='_blank'>
                                 <img
                                     src={x.img}

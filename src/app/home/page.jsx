@@ -1,3 +1,4 @@
+'use client'
 // pages/index.tsx ya app/page.tsx
 import Image from 'next/image'
 // import bgImage from '../public/bg.jpg' // apni image ka path
@@ -21,7 +22,7 @@ export default function Home() {
 
         <Navbar />
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-start md:items-center justify-center text-white h-full px-4 ">
+        <div className="relative z-10 flex flex-col items-start md:items-center justify-center text-white h-full px-4 " data-aos="fade-up-right">
           <h2 className="text-2xl md:text-6xl font-bold mb-4 text-nowrap">
             We provide Scientific Solutions
           </h2>

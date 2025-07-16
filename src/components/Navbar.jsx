@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoCloseSharp } from "react-icons/io5";
+import {RadiusBottomleftOutlined,CloseOutlined} from '@ant-design/icons'
 import { Drawer } from "antd";
 import { bgcolor } from "../utils";
 import './nav.css';
@@ -25,13 +24,13 @@ const Navbar = () => {
     }, []);
 
     const menu = [
-        { title: 'Home' ,link:'#home'},
-        { title: 'About Us',link:'#about' },
-        { title: 'Partners',link:'#partner' },
-        { title: 'Products',link:'#products' },
-        { title: 'Services',link:'#services' },
-        { title: 'Careers',link:'' },
-        { title: 'Contact Us',link:'' }
+        { title: 'Home', link: '#home' },
+        { title: 'About Us', link: '#about' },
+        { title: 'Partners', link: '#partner' },
+        { title: 'Products', link: '#products' },
+        { title: 'Services', link: '#services' },
+        { title: 'Careers', link: '#' },
+        { title: 'Contact Us', link: '#contact' }
     ];
 
     return (
@@ -69,7 +68,8 @@ const Navbar = () => {
                     className="sm:flex justify-center items-center md:hidden cursor-pointer"
                     onClick={showDrawer}
                 >
-                    <GiHamburgerMenu color={'white'} size={20} />
+                    <RadiusBottomleftOutlined style={{color:'white',fontSize:'20px'}} color={'white'} size={20}/>
+                    {/* <GiHamburgerMenu color={'white'} size={20} /> */}
                 </div>
             </div>
 
@@ -86,7 +86,8 @@ const Navbar = () => {
                             height="150px"
                         />
                         <div onClick={onClose}>
-                            <IoCloseSharp color="white" size={26} className="mr-4 cursor-pointer" />
+                            <CloseOutlined style={{color:'white',fontSize:'20px',margin:'5px',cursor:'pointer'}} />
+                            {/* <IoCloseSharp  /> */}
                         </div>
                     </div>
                 }
@@ -98,13 +99,15 @@ const Navbar = () => {
             >
                 <ul className="flex flex-col">
                     {menu.map((x, i) => (
-                        <li
-                            key={i}
-                            className="list-none px-4 py-[6px] my-2 text-black text-[17px] cursor-pointer"
-                        >
-                            {x.title}
-                            <hr />
-                        </li>
+                        <a href={x.link} key={i}>
+                            <li
+
+                                className="list-none px-4 py-[6px] my-2 text-black text-[17px] cursor-pointer"
+                            >
+                                {x.title}
+                                <hr />
+                            </li>
+                        </a>
                     ))}
                 </ul>
             </Drawer>

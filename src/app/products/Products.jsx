@@ -1,9 +1,9 @@
 
+'use client';
 import Image from 'next/image'
 import React from 'react'
 import { EditOutlined, EllipsisOutlined, EyeOutlined, MessageOutlined, SettingOutlined } from '@ant-design/icons';
 import { Avatar, Card, Tooltip } from 'antd';
-import { BsChatLeftQuoteFill } from "react-icons/bs";
 import { bgcolor } from '../../utils';
 const { Meta } = Card;
 function Products() {
@@ -83,13 +83,15 @@ function Products() {
                 {
                     products.map((x, i) => (
                         <Card
+                        data-aos="fade-left"
                             key={i}
                             style={{ width: 330, height: 380, border: '3px solid grey' }}
+                            className='shadow-2xl'
                             cover={
                                 <img
                                     alt="example"
                                     src={x.img}
-                                    className='p-4 h-[150px] '
+                                    className='p-4 h-[150px] shadow'
                                 />
                             }
                             actions={[

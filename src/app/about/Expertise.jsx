@@ -1,3 +1,4 @@
+'use client';
 import GlassEffect from '../../components/GlassEffect'
 import React from 'react'
 import img from '../../images/3.jpg'
@@ -24,6 +25,7 @@ function Expertise() {
             <div className='w-full h-[auto]  z-20 flex mb-0 py-12'>
                 <Row className='flex justify-center items-center'>
                     <Col
+                    data-aos="fade-down-left"
                         md={24} lg={16} xl={14}
                     >
                         <h2 className='text-4xl md:text-5xl text-center lg:text-left py-4'>Our Areas Of <br /> Expertise</h2>
@@ -38,6 +40,7 @@ function Expertise() {
                         </div>
                     </Col>
                     <Col
+                    data-aos="fade-down-right"
                         md={24} lg={8} xl={10}
                         className="relative w-full h-[500px] overflow-hidden md:mt-[80px] lg:mt-[0px] rounded-[30px]"
                     >

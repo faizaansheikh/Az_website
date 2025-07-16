@@ -1,10 +1,11 @@
+'use client'
 import { bgcolor } from '../utils'
 import React from 'react'
 
 function MyButton(props) {
-    const { title } = props
+    const { title, className, type } = props
     return (
-        <div style={{backgroundColor:bgcolor}} className='py-4 px-[19px] cursor-pointer rounded-[8px]'>{title}</div>
+        <button type={type || ''} style={{ backgroundColor: bgcolor }} className={`${className} py-4 px-[19px] cursor-pointer rounded-[8px] w-full`}>{title}</button>
     )
 }
 

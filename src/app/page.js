@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import Home from "./home/page";
 import Navbar from "../components/Navbar";
@@ -5,6 +6,7 @@ import About from "./about/page";
 import Partners from "./partners/Partners";
 import Products from "./products/Products";
 import Footer from "./footer/Footer";
+import Contact from "./contact/Contact";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Page() {
   return (
@@ -26,14 +28,19 @@ export default function Page() {
         <Products />
       </div>
 
+      <div className="mt-[50px] md:mt-[50px]" id="contact">
 
+        <Contact />
+      </div>
 
-      <div className="mt-[70px] md:mt-[100px]">
+      <div className="mt-[70px] md:mt-[50px]">
 
         <Footer />
       </div>
 
-      
+
+
+
       {/* <Navbar/> */}
 
     </div>

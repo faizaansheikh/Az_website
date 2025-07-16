@@ -1,5 +1,4 @@
-import { title } from "process"
-import react from "react"
+'use client';
 const GlassEffect = ({children,className}) => {
 
     return (
