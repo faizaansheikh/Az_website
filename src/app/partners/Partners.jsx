@@ -42,7 +42,7 @@ function Partners() {
             url: 'http://labtechsrl.com/#products'
         },
 
-         {
+        {
             img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/9.png',
             url: 'https://orbisbv.com/#special',
         },
@@ -61,13 +61,15 @@ function Partners() {
                 {
                     partners.map((x, i) => (
                         <div key={i} className='relative w-[320px]  h-[150px] border-2 border-[grey] rounded-[10px] transition-transform duration-300 hover:scale-110 shadow-xl'>
-                            <a  href={x.url} target='_blank'>
-                                <Image
+                            <a href={x.url} target='_blank'>
+                                <img
                                     src={x.img}
                                     alt="Banner"
-                                    fill
-                                    className=" shadow-2xl p-2"
+                                    className="shadow-2xl p-2"
+                                    style={{objectFit:'contain',width:'100%',height:'100%',position:'absolute',top:0,left:0}}
+                                    // style="object-fit: cover; width: 100%; height: 100%; position: absolute; top: 0; left: 0;"
                                 />
+
                             </a>
                         </div>
                     ))
