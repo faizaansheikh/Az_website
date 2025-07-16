@@ -25,13 +25,13 @@ const Navbar = () => {
     }, []);
 
     const menu = [
-        { title: 'Home' },
-        { title: 'About Us' },
-        { title: 'Partners' },
-        { title: 'Products' },
-        { title: 'Services' },
-        { title: 'Careers' },
-        { title: 'Contact Us' }
+        { title: 'Home' ,link:'#home'},
+        { title: 'About Us',link:'#about' },
+        { title: 'Partners',link:'#partner' },
+        { title: 'Products',link:'#products' },
+        { title: 'Services',link:'#services' },
+        { title: 'Careers',link:'' },
+        { title: 'Contact Us',link:'' }
     ];
 
     return (
@@ -40,7 +40,7 @@ const Navbar = () => {
                 className={`fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-4 transition-all duration-300 
 
                     }`}
-                    style={{backgroundColor:isScrolled?bgcolor:''}}
+                style={{ backgroundColor: isScrolled ? bgcolor : '' }}
             >
                 <div>
                     <img
@@ -53,13 +53,15 @@ const Navbar = () => {
 
                 <ul className="hidden md:flex">
                     {menu.map((x, i) => (
-                        <li
-                            key={i}
-                            className={`list-none px-4 text-[17px] relative nav-list cursor-pointer text-white
+                        <a href={x.link} key={i}>
+                            <li
+                                className={`list-none px-4 text-[17px] relative nav-list cursor-pointer text-white
                                 }`}
-                        >
-                            {x.title}
-                        </li>
+                            >
+                                {x.title}
+                            </li>
+                        </a>
+
                     ))}
                 </ul>
 

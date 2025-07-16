@@ -9,19 +9,19 @@ import Footer from "./footer/Footer";
 export default function Page() {
   return (
     <div className="">
-      <div className="mb-4">
+      <div className="mb-4" id="home">
         <Home />
       </div>
 
-      <div className="mt-[70px] md:mt-0">
+      <div className="mt-[70px] md:mt-0" id="about">
         <About />
       </div>
-      <div className="mt-[70px] mb-[40px] md:mt-[60px]">
+      <div className="mt-[70px] mb-[40px] md:mt-[60px]" id="partner">
 
         <Partners />
       </div>
 
-      <div className="mt-[70px] mb-[40px] md:mt-[100px]">
+      <div className="mt-[70px] mb-[40px] md:mt-[100px]" id="products">
 
         <Products />
       </div>

@@ -9,13 +9,13 @@ import TechnicaService from './TechnicaService'
 function About() {
     return (
         <>
-            <div className='h-[400px]  px-[30px] lg:px-[200px] flex justify-center items-center flex-col'>
+            <div className='h-[400px]  px-[30px] lg:px-[200px] flex justify-center items-center flex-col' > 
 
-                <GlassEffect className='mb-4'>
+                <GlassEffect className='mb-4' >
                     NEED TO KNOW
 
                 </GlassEffect>
-                <h2 className='text-4xl md:text-6xl mb-2 text-center'>
+                <h2 className='text-4xl md:text-6xl mb-2 text-center' >
                     About AZ Scientific Solutions
                 </h2>
                 <p className='text-start md:text-center text-sm md:text-[18px]'>

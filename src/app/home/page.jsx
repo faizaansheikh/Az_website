@@ -28,7 +28,9 @@ export default function Home() {
           <p className="mb-6 text-md md:text-lg md:text-xl max-w-2xl ">
             We provide reliable scientific solutions across various industries
           </p>
-          <MyButton title="Explore More" />
+          <a href="#about">
+            <MyButton title="Explore More" />
+          </a>
         </div>
       </div>
 
