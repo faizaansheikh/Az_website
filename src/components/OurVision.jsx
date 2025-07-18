@@ -36,13 +36,13 @@ function OurVision() {
     ]
     return (
         <>
-            <div className='w-full h-[auto]  rounded-[80px] pb-6  flex flex-col' style={{ backgroundColor: bgcolor }}>
+            <div className='w-full h-[auto]  rounded-[50px] pb-6  flex flex-col bg-[#071E4C] shadow-xl' style={{ boxShadow:'5px 5px 35px 10px black' }}>
                 <div className='flex justify-evenly items-center pt-[60px] flex-wrap '>
                     {
                         arr.map((x, i) => (
                             <div key={i}
                                 onClick={() => setSelected(x.id)}
-                                className={`w-[200px] h-[200px] flex flex-col justify-center items-center shadow-black border-2 ${selected === x.id ? 'border-[lightgrey] text-white shadow-xl ' : 'border-[grey] text-[grey] shadow-lg '} rounded-[17px] p-4 cursor-pointer hover:border-[lightgrey] hover:text-[white]`}>
+                                className={`w-[200px] transition-transform duration-300 hover:scale-110 h-[200px] flex flex-col justify-center items-center shadow-black border-2 ${selected === x.id ? 'border-[lightgrey] text-white shadow-xl ' : 'border-[grey] text-[grey] shadow-lg '} rounded-[17px] p-4 cursor-pointer hover:border-[lightgrey] hover:text-[white]`}>
                                 <div>{x.icon(x.id)}</div>
                                 <h2 className={`text-center text-3xl pt-2 `}>{x.title}</h2>
                             </div>
@@ -51,7 +51,7 @@ function OurVision() {
 
 
                 </div>
-                <div className='backdrop-blur-xl bg-[white]/10 border border-grey/10 rounded-[80px] shadow-xl px-6 w-auto flex flex-col justify-center items-center h-[300px]  mt-12 mx-4 text-white'>
+                <div className='backdrop-blur-xl bg-[white]/10 border border-grey/10 rounded-[50px] shadow-xl px-6 w-auto flex flex-col justify-center items-center h-[300px]  mt-12 mx-4 text-white'>
                     {arr.map((x, i) => (
                         selected === x.id &&
                         <div key={i} className='flex flex-col justify-center items-center'>

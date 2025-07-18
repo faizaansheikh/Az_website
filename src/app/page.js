@@ -8,6 +8,7 @@ import Products from "./products/Products";
 import Footer from "./footer/Footer";
 import Contact from "./contact/Contact";
 import Partner from "../components/Partner";
+import { bgcolor } from "@/utils";
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Page() {
@@ -20,7 +21,7 @@ export default function Page() {
       <div className="mt-[70px] md:mt-0" id="about">
         <About />
       </div>
-      <div className="mt-[70px] mb-[40px] md:mt-[60px]" id="partner">
+    <div className="mt-[70px] mb-[40px] pb-20 w-full h-[auto] md:mt-[60px]" style={{backgroundColor:'#e2dedeff'}} id="partner">
 
         <Partner />
       </div>
