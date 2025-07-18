@@ -7,6 +7,8 @@ import Partners from "./partners/Partners";
 import Products from "./products/Products";
 import Footer from "./footer/Footer";
 import Contact from "./contact/Contact";
+import Partner from "../components/Partner";
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Page() {
   return (
@@ -20,7 +22,7 @@ export default function Page() {
       </div>
       <div className="mt-[70px] mb-[40px] md:mt-[60px]" id="partner">
 
-        <Partners />
+        <Partner />
       </div>
 
       <div className="mt-[70px] mb-[40px] md:mt-[100px]" id="products">
