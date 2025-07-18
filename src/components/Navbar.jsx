@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from "react";
-import {RadiusBottomleftOutlined,CloseOutlined} from '@ant-design/icons'
+import { RadiusBottomleftOutlined, CloseOutlined } from '@ant-design/icons'
 import { Drawer } from "antd";
 import { bgcolor } from "../utils";
 import './nav.css';
@@ -36,10 +36,10 @@ const Navbar = () => {
     return (
         <>
             <div
-                className={`fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-4 transition-all duration-300 
-
+                className={`fixed top-0 left-0 right-0 z-20 flex justify-between items-center py-4 px-4 transition-all duration-300 
+backdrop-blur-lg bg-[black]/30  border-grey/50 mt-2
                     }`}
-                style={{ backgroundColor: isScrolled ? bgcolor : '' }}
+                style={{ backgroundColor: isScrolled ? '' : '' }}
             >
                 <div>
                     <img
@@ -68,7 +68,7 @@ const Navbar = () => {
                     className="sm:flex justify-center items-center md:hidden cursor-pointer"
                     onClick={showDrawer}
                 >
-                    <RadiusBottomleftOutlined style={{color:'white',fontSize:'20px'}} color={'white'} size={20}/>
+                    <RadiusBottomleftOutlined style={{ color: 'white', fontSize: '20px' }} color={'white'} size={20} />
                     {/* <GiHamburgerMenu color={'white'} size={20} /> */}
                 </div>
             </div>
@@ -86,7 +86,7 @@ const Navbar = () => {
                             height="150px"
                         />
                         <div onClick={onClose}>
-                            <CloseOutlined style={{color:'white',fontSize:'20px',margin:'5px',cursor:'pointer'}} />
+                            <CloseOutlined style={{ color: 'white', fontSize: '20px', margin: '5px', cursor: 'pointer' }} />
                             {/* <IoCloseSharp  /> */}
                         </div>
                     </div>
