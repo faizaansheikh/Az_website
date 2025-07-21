@@ -15,9 +15,7 @@ import Product from "@/components/Product";
 export default function Page() {
   return (
     <div className="">
-      <div className="mb-4" id="home">
-        <Home />
-      </div>
+     
 
       <div className="mt-[70px] md:mt-0" id="about">
         <About />
@@ -37,10 +35,7 @@ export default function Page() {
         <Contact />
       </div>
 
-      <div className="mt-[70px] md:mt-[50px]">
-
-        <Footer />
-      </div>
+     
 
 
 

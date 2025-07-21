@@ -5,8 +5,10 @@ import { RadiusBottomleftOutlined, CloseOutlined } from '@ant-design/icons'
 import { Drawer } from "antd";
 import { bgcolor } from "../utils";
 import './nav.css';
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+    const router = useRouter()
     const [open, setOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -29,10 +31,26 @@ const Navbar = () => {
         { title: 'Partners', link: '#partner' },
         { title: 'Products', link: '#products' },
         { title: 'Services', link: '#services' },
-        { title: 'Careers', link: '#' },
+        { title: 'Careers', link: '/careers' },
         { title: 'Contact Us', link: '#contact' }
     ];
 
+    const handleLinks = (x) => {
+        if (x.title === 'Careers') {
+            router.push('/careers')
+        } else if (x.title === 'Home') {
+            router.replace('/#home')
+        }else if (x.title === 'About Us') {
+            router.replace('/#about')
+        }else if (x.title === 'Partners') {
+            router.replace('/#partner')
+        }else if (x.title === 'Products') {
+            router.replace('/#products')
+        }else if (x.title === 'Contact Us') {
+            router.replace('/#contact')
+        }
+
+    }
     return (
         <>
             <div
@@ -56,6 +74,7 @@ backdrop-blur-lg bg-[black]/30  border-grey/50 mt-2
                             <li
                                 className={`list-none px-4 text-[17px] relative nav-list cursor-pointer text-white
                                 }`}
+                                onClick={() => handleLinks(x)}
                             >
                                 {x.title}
                             </li>
