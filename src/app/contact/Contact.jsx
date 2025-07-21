@@ -6,14 +6,13 @@ import TextArea from 'antd/es/input/TextArea';
 import MyButton from '../../components/MyButton';
 import img from '../../images/contact.png'
 import Image from 'next/image';
+import { bgcolor } from '@/utils';
 
-const handleSubmit = ()=>{}
+const handleSubmit = () => { }
 function Contact() {
     return (
         <div className=''>
-            <h2 className='text-4xl md:text-6xl text-center '>
-                Contact
-            </h2>
+            <h2 className='text-4xl md:text-5xl text-center mx-52  pt-5 pb-4 mb-20' style={{ borderBottom: `2px solid ${bgcolor}` }}>Contact</h2>
             {/* F4F4F4 */}
             <div className='bg-grey-200 w-[full] h-[auto] flex justify-around items-center flex-wrap'>
 
@@ -34,7 +33,7 @@ function Contact() {
 
 
 
-                <div className='bg-[#F4F4F4] border-2 rounded-[20px] border-black w-[620px] h-full p-6 shadow-2xl m-2'>
+                <div className='bg-[#F4F4F4] border-2 rounded-[20px] border-black w-[680px] h-full p-6 shadow-2xl m-2'>
                     <h2 className='text-3xl'>We'd love to help</h2>
                     <p>Reach Out and we'll get in touch within 24 hours</p>
                     <form action="" onSubmit={handleSubmit}>
@@ -43,21 +42,21 @@ function Contact() {
                                 <Input size="large" placeholder="Name" prefix={<UserOutlined />} required />
                             </Col>
                             <Col span={12} xs={24} md={12} className='mb-4 md:mb-0'>
-                                <Input size="large" placeholder="Email" prefix={<MailOutlined />} required/>
+                                <Input size="large" placeholder="Email" prefix={<MailOutlined />} required />
                             </Col>
 
                             <Col span={12} xs={24} md={12} className='mb-4 md:mb-0'>
-                                <Input size="large" placeholder="Phone" prefix={<PhoneOutlined />} required/>
+                                <Input size="large" placeholder="Phone" prefix={<PhoneOutlined />} required />
                             </Col>
                             <Col span={12} xs={24} md={12} className='mb-4 md:mb-0'>
-                                <Input size="large" placeholder="Why are you contacting us" prefix={<UserOutlined />} required/>
+                                <Input size="large" placeholder="Why are you contacting us" prefix={<UserOutlined />} required />
                             </Col>
                             <Col span={24} className='mt-4'>
-                                <TextArea rows={6} size="large" placeholder="Leave Us a message" maxLength={12} required/>
+                                <TextArea rows={6} size="large" placeholder="Leave Us a message" maxLength={12} required />
                             </Col>
                             <Col span={24} className='mt-4'>
 
-                                <MyButton title="Send Message" className='text-white text-center text-[16px]' type='submit'/>
+                                <MyButton title="Send Message" className='text-white text-center text-[16px]' type='submit' />
                             </Col>
                         </Row>
                     </form>

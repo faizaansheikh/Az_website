@@ -9,6 +9,7 @@ import Footer from "./footer/Footer";
 import Contact from "./contact/Contact";
 import Partner from "../components/Partner";
 import { bgcolor } from "@/utils";
+import Product from "@/components/Product";
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Page() {
@@ -26,9 +27,9 @@ export default function Page() {
         <Partner />
       </div>
 
-      <div className="mt-[70px] mb-[40px] md:mt-[100px]" id="products">
+      <div className="mt-[70px] mb-[80px] md:mt-[100px]" id="products">
 
-        <Products />
+        <Product />
       </div>
 
       <div className="mt-[50px] md:mt-[50px]" id="contact">

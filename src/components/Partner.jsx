@@ -62,12 +62,12 @@ const Partner = () => {
                 keyBoardControl
                 pauseOnHover
                 showDots
-                renderDotsOutside
+                // renderDotsOutside
                 responsive={{
                     desktop: {
                         breakpoint: { max: 3000, min: 800 },
                         items: 4,
-                        partialVisibilityGutter: 40
+                        partialVisibilityGutter: 0
                     },
                     tablet: {
                         breakpoint: { max: 1024, min: 300 },
@@ -83,7 +83,7 @@ const Partner = () => {
                 swipeable
             >
                 {partners.map((partner, index) => (
-                    <div key={index} className='border-1 hover:border-1 border-[#071E4C] transition-transform duration-300 hover:scale-90 hover:border-[black] h-[160px] flex items-center justify-center cursor-pointer rounded-[10px] mx-2 shadow-xl hover:shadow-2xl' >
+                    <div key={index} className='border-1 hover:border-1 border-[#071E4C] transition-transform duration-300 hover:scale-90 hover:border-[black] h-[160px] flex items-center justify-center cursor-pointer rounded-[10px] mx-2 mb-10 shadow-xl hover:shadow-2xl' >
                         <a  href={partner.url} target="_blank" rel="noopener noreferrer" >
                             <img
                                 src={partner.img}
