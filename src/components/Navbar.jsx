@@ -41,7 +41,7 @@ backdrop-blur-lg bg-[black]/30  border-grey/50 mt-2
                     }`}
                 style={{ backgroundColor: isScrolled ? '' : '' }}
             >
-                <div>
+                <div data-aos='fade-right'>
                     <img
                         src="https://az-scientificsolutions.com/wp-content/uploads/2018/05/logo.png"
                         alt="logo"
@@ -50,7 +50,7 @@ backdrop-blur-lg bg-[black]/30  border-grey/50 mt-2
                     />
                 </div>
 
-                <ul className="hidden md:flex">
+                <ul className="hidden md:flex" data-aos='fade-left'>
                     {menu.map((x, i) => (
                         <a href={x.link} key={i}>
                             <li
