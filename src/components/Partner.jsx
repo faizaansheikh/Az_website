@@ -84,26 +84,26 @@ const Partner = () => {
             >
                 {partners.map((partner, index) => (
                     <div
-  data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'}
-  key={index}
-  className="mx-2 mb-10"
->
-  <div className="border-1 hover:border-1 border-[#071E4C] transition-transform duration-300 hover:scale-90 hover:border-black h-[160px] flex items-center justify-center cursor-pointer rounded-[10px] shadow-xl hover:shadow-2xl">
-    <a href={partner.url} target="_blank" rel="noopener noreferrer">
-      <img
-        src={partner.img}
-        alt={`Partner ${index + 1}`}
-        className=""
-        style={{
-          width: '100%',
-          height: 'auto',
-          padding: '5px',
-          objectFit: 'contain',
-        }}
-      />
-    </a>
-  </div>
-</div>
+                        data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'}
+                        key={index}
+                        className="mx-2 mb-10"
+                    >
+                        <div className="border-1 hover:border-1 border-[#071E4C] transition-transform duration-300 hover:scale-90 hover:border-black h-[160px] flex items-center justify-center cursor-pointer rounded-[10px] shadow-xl hover:shadow-2xl">
+                            <a href={partner.url} target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src={partner.img}
+                                    alt={`Partner ${index + 1}`}
+                                    className=""
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        padding: '5px',
+                                        objectFit: 'contain',
+                                    }}
+                                />
+                            </a>
+                        </div>
+                    </div>
 
 
                 ))}
