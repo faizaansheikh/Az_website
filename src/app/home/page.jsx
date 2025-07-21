@@ -86,19 +86,20 @@ const Home = () => {
       <Carousel autoplaySpeed={2000} effect="scrollx" dots draggable arrows>
         {
           images.map((x, i) => (
-            <div key={i} className="w-full h-[100vh] relative">
+            <div key={i} className="w-full h-[100vh] relative" >
               {/* Background image */}
               <img
                 src={x.img}
                 alt="Banner"
                 className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
+                data-aos='flip-up'
               />
 
               {/* Optional overlay for darkening the image */}
               <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
 
               {/* Content over the image */}
-              <div className="absolute top-0 left-0  w-full h-full flex flex-col justify-center items-center text-white px-4 z-20">
+              <div className="absolute top-0 left-0  w-full h-full flex flex-col justify-center items-center text-white px-4 z-20" data-aos='fade-right'>
                 <div>
                   <p className="text-2xl md:text-4xl py-4">We provide</p>
                 </div>
