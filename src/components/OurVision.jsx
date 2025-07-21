@@ -57,7 +57,7 @@ function OurVision() {
                         selected === x.id &&
                         <div key={i} className='flex flex-col justify-center items-center'>
                             <h2 className='text-2xl md:text-4xl mb-4 font-bold'>   {selected === x.id ? x.title : ''}</h2>
-                            <p className='text-xl md:text-2xl text-white text-center'>
+                            <p className='text-[16px] md:text-2xl text-white text-center'>
                                 {selected === x.id ? x.desc : ''}
                             </p>
                         </div>

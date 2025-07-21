@@ -81,7 +81,7 @@ function Product() {
                     arr.map((x, i) => (
                         <div
                             key={i}
-                            className="w-[330px] h-[400px] border border-black flex flex-col justify-between group overflow-hidden cursor-pointer shadow-2xl rotate-0 hover:rotate-5 transition-all duration-500"
+                            className="w-[330px] h-[400px] border border-black flex flex-col justify-between group overflow-hidden cursor-pointer shadow-2xl shadow-black rotate-0 hover:rotate-5 transition-all duration-700 "
                         >
                             <div className="w-full h-[350px] relative">
                                 <Image

@@ -36,7 +36,7 @@ const Navbar = () => {
     return (
         <>
             <div
-                className={`fixed top-0 left-0 right-0 z-20 flex justify-between items-center py-4 px-4 transition-all duration-300 
+                className={`fixed top-0 left-0 right-0 z-60 flex justify-between items-center py-4 px-4 transition-all duration-300 
 backdrop-blur-lg bg-[black]/30  border-grey/50 mt-2
                     }`}
                 style={{ backgroundColor: isScrolled ? '' : '' }}

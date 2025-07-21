@@ -36,7 +36,7 @@ function About() {
 
                 </div>
             </div>
-            <div className='mx-4 lg:mx-[120px] mb-[0px] mt-[60px] md:mt-[20px]'>
+            <div className='mx-4  mb-[0px] mt-[60px] md:mt-[20px]'>
 
                 <Divisions />
             </div>
