@@ -67,7 +67,7 @@ function OurVision() {
                 <div className='backdrop-blur-xl bg-[white]/10 border border-grey/10 rounded-[50px] shadow-xl px-6 w-auto flex flex-col justify-center items-center h-[300px]  mt-12 mx-4 text-white'>
                     {arr.map((x, i) => (
                         selected === x.id &&
-                        <div data-aos='fade-opacity' key={i} className='flex flex-col justify-center items-center'>
+                        <div data-aos='flip-down' key={i} className='flex flex-col justify-center items-center'>
                             <h2 className='text-2xl md:text-4xl mb-4 font-bold'>   {selected === x.id ? x.title : ''}</h2>
                             <p className='text-[16px] md:text-2xl text-white text-center'>
                                 {selected === x.id ? x.desc : ''}
