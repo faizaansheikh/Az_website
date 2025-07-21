@@ -12,7 +12,7 @@ const handleSubmit = () => { }
 function Contact() {
     return (
         <div className=''>
-            <h2 className='text-4xl md:text-5xl text-center mx-52  pt-5 pb-4 mb-20' style={{ borderBottom: `2px solid ${bgcolor}` }}>Contact</h2>
+            <h2 className='text-4xl md:text-5xl text-center mx-4 md:mx-52  pt-5 pb-4 mb-20' style={{ borderBottom: `2px solid ${bgcolor}` }}>Contact</h2>
             {/* F4F4F4 */}
             <div className='bg-grey-200 w-[full] h-[auto] flex justify-around items-center flex-wrap'   data-aos={'fade-right'}>
 
