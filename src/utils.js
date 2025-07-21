@@ -1,2 +1,2 @@
-export const bgcolor = '#0b275fff'
-// export const bgcolor = '#071E4C'
+export const bgcolor = '#06183bff'
+// export const bgcolor = '#030b1bff'

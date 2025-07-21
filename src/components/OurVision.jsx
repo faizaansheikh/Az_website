@@ -37,7 +37,8 @@ function OurVision() {
     // 071E4C
     return (
         <>
-            <div className='w-full h-[auto]  rounded-[50px] pb-6  flex flex-col bg-[black] shadow-xl' style={{ boxShadow:'5px 5px 35px 10px black' }}>
+
+            <div className='w-full h-[auto]  rounded-[50px] pb-6  flex flex-col bg-[#030b1bff] shadow-xl' style={{ boxShadow:'5px 5px 35px 10px black' }}>
                 <div className='flex justify-evenly items-center pt-[60px] flex-wrap '>
                     {
                         arr.map((x, i) => (
