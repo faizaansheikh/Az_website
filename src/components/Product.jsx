@@ -106,7 +106,7 @@ function Product() {
                                     /> */}
                                     <div className="absolute top-0 left-0 w-full h-full bg-black/50 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-around pb-2">
                                         <a href={x.url} target="_blank" rel="noopener noreferrer">
-                                            <MyButton title="View Details" className="text-white" />
+                                            <MyButton title="View More" className="text-white" />
                                         </a>
                                         <MyButton title="Request a quotation" className="text-white" />
                                     </div>
