@@ -80,29 +80,34 @@ function Product() {
                 {
                     arr.map((x, i) => (
                         <div
+                            data-aos={i % 2 === 0 ? 'flip-left' : 'flip-right'}
                             key={i}
-                            className="w-[330px] h-[400px] border border-black flex flex-col justify-between group overflow-hidden cursor-pointer shadow-2xl shadow-black rotate-0 hover:rotate-5 transition-all duration-700 "
+                            className="w-[330px] h-[400px]"
                         >
-                            <div className="w-full h-[350px] relative">
-                                <Image
-                                    src={x.img}
-                                    alt="Banner"
-                                    className="object-cover w-full h-full rounded-r-[130px] transition-all duration-500"
-                                />
-                                {/* Overlay div */}
-                                <div className="absolute top-0 left-0 w-full h-full bg-black/50 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-around pb-2">
-                                    <a href={x.url} target="_blank" rel="noopener noreferrer">
-                                        <MyButton title='View Details' className=' text-white' />
-                                    </a>
-                                    <MyButton title='Request a quotation' className=' text-white' />
+                            <div className="w-full h-full border border-black flex flex-col justify-between group overflow-hidden cursor-pointer shadow-2xl shadow-black rotate-0 hover:rotate-5 transition-all duration-700">
+                                <div className="w-full h-[350px] relative">
+                                    <Image
+                                        src={x.img}
+                                        alt="Banner"
+                                        className="object-cover w-full h-full rounded-r-[130px] transition-all duration-500"
+                                    />
+                                    <div className="absolute top-0 left-0 w-full h-full bg-black/50 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-around pb-2">
+                                        <a href={x.url} target="_blank" rel="noopener noreferrer">
+                                            <MyButton title="View Details" className="text-white" />
+                                        </a>
+                                        <MyButton title="Request a quotation" className="text-white" />
+                                    </div>
+                                </div>
 
+                                <div
+                                    className="w-full h-[50px] bg-black text-white text-center flex items-center justify-center text-xl"
+                                    style={{ backgroundColor: bgcolor }}
+                                >
+                                    {x.title}
                                 </div>
                             </div>
-
-                            <div className="w-full h-[50px] bg-black text-white text-center flex items-center justify-center text-xl" style={{backgroundColor:bgcolor}}>
-                                {x.title}
-                            </div>
                         </div>
+
 
                     ))
                 }

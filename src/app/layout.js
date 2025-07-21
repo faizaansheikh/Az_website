@@ -1,6 +1,7 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import AOSInitializer from "@/components/AOSInitializer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,7 +25,8 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={''} />
         <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
-        {/* <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> */}
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+       
       </head>
       <body
         cz-shortcut-listen="true"
@@ -33,7 +35,7 @@ export default function RootLayout({ children }) {
       >
         {children}
       
-       {/* <AOSInitializer/> */}
+       <AOSInitializer/>
       </body >
 
     </html>

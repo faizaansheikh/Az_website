@@ -26,3 +26,6 @@
 
 
 
+[data-aos].aos-animate {
+  transform: none !important;
+}

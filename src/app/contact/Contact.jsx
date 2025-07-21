@@ -14,7 +14,7 @@ function Contact() {
         <div className=''>
             <h2 className='text-4xl md:text-5xl text-center mx-52  pt-5 pb-4 mb-20' style={{ borderBottom: `2px solid ${bgcolor}` }}>Contact</h2>
             {/* F4F4F4 */}
-            <div className='bg-grey-200 w-[full] h-[auto] flex justify-around items-center flex-wrap'>
+            <div className='bg-grey-200 w-[full] h-[auto] flex justify-around items-center flex-wrap'   data-aos={'fade-right'}>
 
                 <div className=" relative w-[550px] h-[600px] m-2" >
                     <Image
@@ -33,7 +33,7 @@ function Contact() {
 
 
 
-                <div className='bg-[#F4F4F4] border-2 rounded-[20px] border-black w-[680px] h-full p-6 shadow-2xl m-2'>
+                <div className='bg-[#F4F4F4] border-2 rounded-[20px] border-black w-[680px] h-full p-6 shadow-2xl m-2' >
                     <h2 className='text-3xl'>We'd love to help</h2>
                     <p>Reach Out and we'll get in touch within 24 hours</p>
                     <form action="" onSubmit={handleSubmit}>

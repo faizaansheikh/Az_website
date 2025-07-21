@@ -55,7 +55,7 @@ function Divisions() {
 
                     {i % 2 === 0 ? (
                         <>
-                            <div className="group relative w-full h-[340px] border-1 border-black rounded-l-[60px] md:rounded-l-[150px] cursor-pointer overflow-hidden bg-[black] shadow-2xl shadow-black z-20">
+                            <div data-aos={i % 2 === 0 ? 'flip-left':'flip-right'} className="group relative w-full h-[340px] border-1 border-black rounded-l-[60px] md:rounded-l-[150px] cursor-pointer overflow-hidden bg-[black] shadow-2xl shadow-black z-20">
                                 {/* Background Image */}
                                 <Image
                                     src={x.img}
@@ -79,7 +79,7 @@ function Divisions() {
                     ) : (
                         <>
                             <div className="w-full h-[300px]" />
-                            <div className="group relative w-full h-[340px] border-1 border-black rounded-r-[60px] md:rounded-r-[150px] cursor-pointer overflow-hidden bg-[black] shadow-2xl shadow-black z-20">
+                            <div data-aos={i % 2 === 0 ? 'flip-left':'flip-right'} className="group relative w-full h-[340px] border-1 border-black rounded-r-[60px] md:rounded-r-[150px] cursor-pointer overflow-hidden bg-[black] shadow-2xl shadow-black z-20">
                                 {/* Background Image */}
                                 <Image
                                     src={x.img}
