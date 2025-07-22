@@ -47,12 +47,32 @@
     
 } */
 .ant-carousel .slick-next {
-        inset-inline-end: 30px;
+    inset-inline-end: 70px;
+    transform: scale(2);
 }
 
 .ant-carousel .slick-prev {
-    inset-inline-start: 30px;
+    inset-inline-start: 70px;
+    transform: scale(2);
 }
+
+@media (max-width: 768px) {
+    .ant-carousel .slick-next {
+        inset-inline-end: 30px;
+        transform: scale(1.3);
+    }
+
+    .ant-carousel .slick-prev {
+        inset-inline-start: 30px;
+        transform: scale(1.3);
+    }
+}
+
+.ant-carousel .slick-dots li{
+    transform: scale(1.1);
+    /* width: 50px; */
+}
+
 
 .container {
     width: 45%;

@@ -8,6 +8,7 @@ import Management from './Management'
 import TechnicaService from './TechnicaService'
 import OurVision from '../../components/OurVision';
 import Divisions from '../../components/Divisions';
+import Clients from '@/components/Clients';
 
 function About() {
     return (
@@ -36,10 +37,16 @@ function About() {
 
                 </div>
             </div>
+            <div className='mx-4  mb-[0px] mt-[60px] md:mt-[100px]'>
+
+                <Clients />
+            </div>
             <div className='mx-4  mb-[0px] mt-[60px] md:mt-[20px]'>
 
                 <Divisions />
             </div>
+
+
             {/* 
             <div className='mx-4 lg:mx-[120px] mb-[40px] mt-[40px] md:mt-[20px] '>
                 <TechnicaService />

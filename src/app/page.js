@@ -10,17 +10,19 @@ import Contact from "./contact/Contact";
 import Partner from "../components/Partner";
 import { bgcolor } from "@/utils";
 import Product from "@/components/Product";
+import Clients from "@/components/Clients";
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Page() {
   return (
     <div className="">
-     
+
 
       <div className="mt-[70px] md:mt-0" id="about">
         <About />
       </div>
-    <div className="mt-[70px] mb-[40px] pb-20 w-full h-[auto] md:mt-[60px]" style={{backgroundColor:'#e2dedeff'}} id="partner">
+      
+      <div className="mt-[70px] mb-[40px] pb-20 w-full h-[auto] md:mt-[60px]" style={{ backgroundColor: '#e2dedeff' }} id="partner">
 
         <Partner />
       </div>
@@ -35,7 +37,7 @@ export default function Page() {
         <Contact />
       </div>
 
-     
+
 
 
 
