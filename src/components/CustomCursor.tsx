@@ -1,28 +1,27 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const CustomCursor = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const cursorRef = useRef(null);
 
   useEffect(() => {
     const moveCursor = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+      const { clientX, clientY } = e;
+      if (cursorRef.current) {
+        cursorRef.current.style.transform = `translate3d(${clientX - 10}px, ${clientY - 10}px, 0)`;
+      }
     };
 
     window.addEventListener('mousemove', moveCursor);
     return () => window.removeEventListener('mousemove', moveCursor);
   }, []);
 
+  
   return (
     <div
-      className="fixed top-0 left-0 z-[9999] pointer-events-none"
-      style={{
-        transform: `translate3d(${position.x - 10}px, ${position.y - 10}px, 0)`,
-      }}
-    >
-      <div className="w-8 h-8 rounded-full  border-2 border-[black] opacity-60 backdrop-blur-sm flex justify-start items-start" />
-      
-    </div>
+      ref={cursorRef}
+      className="fixed top-0 left-0 z-[9999] w-7 h-7 rounded-full border-2 border-black opacity-60 pointer-events-none transition-transform duration-75"
+    />
   );
 };
 
