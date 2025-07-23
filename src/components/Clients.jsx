@@ -4,17 +4,32 @@ import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import img from '../images/home.jpg'
 import Image from 'next/image';
+import Carousel from 'react-multi-carousel';
+import GlassEffect from './GlassEffect';
 function Clients() {
     const items = [
-        { title: 'Mobile Development' },
-        { title: 'Artificial Intelligence' },
-        { title: 'Blockchain Development' },
-        { title: 'Web Development' },
+        { title: 'Pharmaceutical ' },
+        { title: 'Oil & Gas Industry ' },
+        { title: 'Environmental Laboratories ' },
+        { title: 'Power and Utility ' },
+        { title: 'Universities and Research Labs' },
+        { title: 'Petrochemicals ' },
+        { title: 'Food Safety & Health industries ' },
+        { title: 'Metals, Materials and Mining ' },
+        { title: 'Biotechnology  ' },
+        { title: 'Industrial Labs' },
 
-         { title: 'Mobile Development' },
-        { title: 'Artificial Intelligence' },
-        { title: 'Blockchain Development' },
-        { title: 'Web Development' },
+
+        { title: 'Water and Wastewater ' },
+        { title: 'Cement ' },
+        { title: 'Nano Technology' },
+        { title: 'Chemicals & Polymers' },
+        { title: 'Governmental Labs' },
+        { title: 'Public Health & Medical Sciences ' },
+        { title: 'Forensic Toxicology ' },
+        { title: 'Agriculture ' },
+        { title: 'Flavors / Fragrances  ' },
+        { title: 'Clinical Toxicology Research' },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,44 +45,74 @@ function Clients() {
 
     return (
         <div className='lg:mx-[200px] '>
-            <h2 className='text-4xl md:text-5xl text-center  pt-20 pb-4 mb-6' style={{ borderBottom: `2px solid ${bgcolor}` }}>Our Clients</h2>
-
-
-            <div className="relative w-full h-[600px] overflow-hidden bg-black">
-                <Image
-                    src={img}
-                    alt="Banner"
-                    className="object-cover w-full h-full absolute p-1"
-                />
-              
-                <div className="absolute inset-0 flex">
-                    {items.map((item, index) => (
-                        <div
-                            key={index}
-                            className={`flex-1 border-r border-white flex items-end justify-center transition-opacity duration-500 ${index === currentIndex ? 'opacity-100' : 'opacity-40'
-                                }`}
+            <h2 className='text-4xl md:text-5xl text-center  pt-20 pb-4 mb-6' >Our Clients & Distribution Scope</h2>
+            <p className='text-center text-xl pb-6 mb-6' style={{ borderBottom: `2px solid ${bgcolor}` }}>
+                We have business partnership with a number of premier manufacturers and suppliers of scientific instrumentation around the globe.
+                We are fully capable of meeting the challenges of providing scientific solutions to laboratories with latest technology, instrumentation
+                and services in the technical, medical and industrial fields.
+            </p>
+            <Carousel
+                arrows
+                autoPlaySpeed={3000}
+                infinite
+                keyBoardControl
+                pauseOnHover
+                showDots
+                // renderDotsOutside
+                responsive={{
+                    desktop: {
+                        breakpoint: { max: 3000, min: 800 },
+                        items: 5,
+                        partialVisibilityGutter: 0
+                    },
+                    tablet: {
+                        breakpoint: { max: 1024, min: 300 },
+                        items: 2,
+                        partialVisibilityGutter: 30
+                    },
+                    mobile: {
+                        breakpoint: { max: 464, min: 0 },
+                        items: 1,
+                        partialVisibilityGutter: 30
+                    }
+                }}
+                swipeable
+            >
+                {items.map((x, index) => (
+                    <div
+                        data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'}
+                        key={index}
+                        className="mx-2 mb-10"
+                    >
+                        <div className="text-xl 
+                        border border-[#071E4C] 
+                        transition-transform duration-500 
+                        hover:scale-90 hover:border-black hover:rotate-3
+                        h-[120px] 
+                        flex items-center justify-center 
+                        cursor-pointer 
+                        rounded-[10px] 
+                        shadow-xl shadow-[grey] hover:shadow-2xl hover:bg-[white]/90
+                        text-wrap
+                        px-2
+                        text-center
+                        text-black
+                        bg-[white]/80
+                        mt-4
+                        backdrop-blur-xl
+                        
+                        "
+                        // style={{backgroundColor:bgcolor}}
                         >
-                            <div className="text-white text-center mb-10 font-semibold text-lg">
-                                {item.title}
-                            </div>
+                            {x.title}
                         </div>
-                    ))}
-                </div>
 
-                {/* Navigation Arrows */}
-                <button
-                    onClick={handlePrev}
-                    className="absolute left-2 top-1/2 transform -translate-y-1/2 text-white bg-black/40 p-2 rounded-full"
-                >
-                    <FaChevronLeft />
-                </button>
-                <button
-                    onClick={handleNext}
-                    className="absolute right-2 top-1/2 transform -translate-y-1/2 text-white bg-black/40 p-2 rounded-full"
-                >
-                    <FaChevronRight />
-                </button>
-            </div>
+                    </div>
+
+
+                ))}
+            </Carousel>
+
         </div>
     )
 }
