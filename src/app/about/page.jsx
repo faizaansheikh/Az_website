@@ -37,10 +37,10 @@ function About() {
 
                 </div>
             </div>
-            <div className='mx-4  mb-[0px] mt-[60px] md:mt-[100px]'>
+            {/* <div className='mx-4  mb-[0px] mt-[60px] md:mt-[100px]'>
 
                 <Clients />
-            </div>
+            </div> */}
             <div className='mx-4  mb-[0px] mt-[60px] md:mt-[20px]'>
 
                 <Divisions />
