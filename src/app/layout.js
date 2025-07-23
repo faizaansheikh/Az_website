@@ -4,6 +4,7 @@ import "./globals.css";
 import AOSInitializer from "@/components/AOSInitializer";
 import Home from "./home/page";
 import Footer from "./footer/Footer";
+import CustomCursor from "@/components/CustomCursor";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
 
           <Footer />
         </div>
+        <CustomCursor/>
         <AOSInitializer />
       </body >
 
