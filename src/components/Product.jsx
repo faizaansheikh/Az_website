@@ -84,7 +84,7 @@ function Product() {
                             key={i}
                             className="w-[330px] h-[400px]"
                         >
-                            <div className="w-full h-full border border-black flex flex-col justify-between group overflow-hidden cursor-pointer shadow-2xl shadow-black rotate-0 hover:rotate-5 transition-all duration-700">
+                            <div className="w-full h-full border border-black flex flex-col justify-between group overflow-hidden cursor-pointer shadow-2xl shadow-black rotate-0 hover:rotate-5 transition-all duration-1000">
                                 <div className="w-full h-[350px] relative">
                                     <img
                                         src={x.img}
@@ -97,18 +97,16 @@ function Product() {
                                             objectFit: 'contain',
                                         }}
                                     />
-                                    {/* <Image
-                                        src={x.img}
-                                        alt="Banner"
-                                        width={100}
-                                        height={20}
-                                        className="object-contain w-full h-full rounded-r-[130px] transition-all duration-500"
-                                    /> */}
-                                    <div className="absolute top-0 left-0 w-full h-full bg-black/50 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-around pb-2">
-                                        <a href={x.url} target="_blank" rel="noopener noreferrer">
-                                            <MyButton title="View More" className="text-white" />
-                                        </a>
-                                        <MyButton title="Request a quotation" className="text-white" />
+                                    
+                                    <div className="absolute top-0 left-0 w-full h-full bg-black/70 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-between pb-2">
+                                        <div className='text-center text-white'></div>
+                                        <div className='text-center text-white text-2xl px-3 mt-4'>Seta Oil Test Centrifuge – 4 place - 90000-3</div>
+                                        <div>
+                                            <span className='mr-2'> <a href={x.url} target="_blank" rel="noopener noreferrer">
+                                                <MyButton title="View More" className="text-white" />
+                                            </a></span>
+                                            <span className='ml-2'><MyButton title="Request a quotation" className="text-white" /></span>
+                                        </div>
                                     </div>
                                 </div>
 

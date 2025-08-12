@@ -45,8 +45,8 @@ function Clients() {
 
     return (
         <div className='lg:mx-[200px] '>
-            <h2 className='text-4xl md:text-5xl text-center  pt-20 pb-4 mb-6' >Our Clients & Distribution Scope</h2>
-            <p className='text-center text-xl pb-6 mb-6' style={{ borderBottom: `2px solid ${bgcolor}` }}>
+            <h2 className='text-4xl md:text-5xl text-center  pt-20 pb-4 mb-6' >Our Customers</h2>
+            <p className='text-center text-md px-4 md:mx-0 md:text-xl pb-6 mb-6' style={{ borderBottom: `2px solid ${bgcolor}` }}>
                 We have business partnership with a number of premier manufacturers and suppliers of scientific instrumentation around the globe.
                 We are fully capable of meeting the challenges of providing scientific solutions to laboratories with latest technology, instrumentation
                 and services in the technical, medical and industrial fields.

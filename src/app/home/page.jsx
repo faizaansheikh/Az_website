@@ -4,18 +4,26 @@ import Navbar from "../../components/Navbar";
 import MyButton from "../../components/MyButton";
 import './home.css'
 import { Carousel } from "antd";
+import img1 from '../../images/1.jpg'
+import img2 from '../../images/h2.jpg'
+import img3 from '../../images/h3.jpg'
+// import img4 from '../../images/h4.jpg'
+import img4 from '../../images/industrial.jpg'
+
+import Image from "next/image";
 const Home = () => {
   const images = [
     {
-      img: "https://az-scientificsolutions.com/wp-content/uploads/2018/05/banner.jpg",
-      title: 'Scientific Solutions'
+      img: img1,
+      // title: 'Scientific Solutions'
     },
     {
-      img: "https://az-scientificsolutions.com/wp-content/uploads/2018/05/banner2.jpg",
+      img: img2,
       title: 'Innovative Research Services'
     },
+
     {
-      img: "https://az-scientificsolutions.com/wp-content/uploads/2018/05/banner3.jpg",
+      img: img4,
       title: 'Trusted Industrial Expertise'
     }
 
@@ -83,33 +91,34 @@ const Home = () => {
         <Navbar />
       </div>
       {/* autoplay */}
-      <Carousel autoplaySpeed={2000} effect="scrollx" dots draggable arrows>
+      <Carousel autoplaySpeed={2000} effect="scrollx" dots draggable arrows   >
         {
           images.map((x, i) => (
-            <div key={i} className="w-full h-[100vh] relative" >
+            <div key={i} className="w-full h-[80vh] relative mt-8" >
               {/* Background image */}
+
               <img
-                src={x.img}
+                src={typeof x.img === 'string' ? x.img : x.img.src}
                 alt="Banner"
                 className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
                 data-aos='flip-up'
               />
 
               {/* Optional overlay for darkening the image */}
-              <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+              <div className="absolute top-0 left-0 w-full h-full bg-black/0 z-10"></div>
 
               {/* Content over the image */}
               <div className="absolute top-0 left-0  w-full h-full flex flex-col justify-center items-center text-white px-4 z-20" data-aos='fade-right'>
-                <div>
+                {i > 0 && <div>
                   <p className="text-2xl md:text-4xl py-4">We provide</p>
-                </div>
+                </div>}
 
                 <div className=" ">
-                  <h1 className=" text-4xl md:text-6xl lg:text-8xl font-bold mb-4 text-wrap min-h-[60px] text-center">{x.title}</h1>
+                  <h1 className=" text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-wrap min-h-[60px] text-center">{x.title}</h1>
                 </div>
-                <a href="#about" className="mt-2 md:mt-6">
+                {/* <a href="#about" className="mt-2 md:mt-6">
                   <MyButton title="Explore More" className='text-white text-[17px]' />
-                </a>
+                </a> */}
               </div>
             </div>
           ))

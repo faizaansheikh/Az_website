@@ -11,6 +11,7 @@ import Partner from "../components/Partner";
 import { bgcolor } from "@/utils";
 import Product from "@/components/Product";
 import Clients from "@/components/Clients";
+import NewProducts from "@/components/NewProducts";
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Page() {
@@ -22,15 +23,9 @@ export default function Page() {
         <About />
       </div>
       
-      <div className="mt-[70px] mb-[40px] pb-20 w-full h-[auto] md:mt-[60px]" style={{ backgroundColor: '#e2dedeff' }} id="partner">
+      
 
-        <Partner />
-      </div>
-
-      <div className="mt-[70px] mb-[80px] md:mt-[100px]" id="products">
-
-        <Product />
-      </div>
+     
 
       <div className="mt-[50px] md:mt-[50px]" id="contact">
 

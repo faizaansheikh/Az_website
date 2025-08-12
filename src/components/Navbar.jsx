@@ -6,7 +6,7 @@ import { Drawer } from "antd";
 import { bgcolor } from "../utils";
 import './nav.css';
 import { useRouter } from "next/navigation";
-
+import logo from '../images/AZ Logo.png'
 const Navbar = () => {
     const router = useRouter()
     const [open, setOpen] = useState(false);
@@ -54,17 +54,16 @@ const Navbar = () => {
     return (
         <>
             <div
-                className={`fixed top-0 left-0 right-0 z-60 flex justify-between items-center py-4 px-4 transition-all duration-300 
-backdrop-blur-lg bg-[black]/30  border-grey/50 mt-2
+                className={`fixed top-0 left-0 right-0 z-60 flex justify-between items-center py-2 px-4 transition-all duration-300 border-grey/50 
                     }`}
-                style={{ backgroundColor: isScrolled ? '' : '' }}
+                style={{ backgroundColor: 'white' }}
             >
-                <div data-aos='fade-right'>
+                <div data-aos='fade-right' className=" rounded-[4px] "> 
                     <img
-                        src="https://az-scientificsolutions.com/wp-content/uploads/2018/05/logo.png"
+                       src={typeof logo === 'string' ? logo : logo.src}
                         alt="logo"
-                        width="200px"
-                        height="150px"
+                        width="280px"
+                        height="180px"
                     />
                 </div>
 
@@ -72,7 +71,7 @@ backdrop-blur-lg bg-[black]/30  border-grey/50 mt-2
                     {menu.map((x, i) => (
                         <a href={x.link} key={i}>
                             <li
-                                className={`list-none px-4 text-[17px] relative nav-list cursor-pointer text-white
+                                className={`list-none px-4 text-[17px] relative nav-list cursor-pointer text-grey
                                 }`}
                                 onClick={() => handleLinks(x)}
                             >

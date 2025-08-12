@@ -9,16 +9,20 @@ import TechnicaService from './TechnicaService'
 import OurVision from '../../components/OurVision';
 import Divisions from '../../components/Divisions';
 import Clients from '@/components/Clients';
+import NewProducts from '@/components/NewProducts';
+import Partner from '@/components/Partner';
+import Products from '../products/Products';
+import AboutSec from '@/components/AboutSec';
 
 function About() {
     return (
         <>
-            <div className='h-[400px]  px-[30px] lg:px-[200px] flex justify-center items-center flex-col' >
+            <div className='h-[400px]  px-[30px] lg:px-[200px] flex justify-center items-center flex-col'  >
 
-                <GlassEffect className='mb-4' >
+                {/* <GlassEffect className='mb-4' >
                     NEED TO KNOW
 
-                </GlassEffect>
+                </GlassEffect> */}
                 <h2 className='text-4xl md:text-6xl mb-2 text-center' >
                     About AZ Scientific Solutions
                 </h2>
@@ -30,14 +34,26 @@ function About() {
                 </p>
             </div>
             <div style={{ backgroundImage: '' }}>
-                <div className='mx-4 lg:mx-[120px] mb-[0px] mt-[60px] md:mt-[20px]'>
+                <div className='mx-4 lg:mx-[120px] mb-[0px] mt-[60px] md:mt-[0px]'>
 
                     {/* <Expertise /> */}
-                    <OurVision />
-
+                    {/* <OurVision /> */}
+                    <AboutSec/>
                 </div>
             </div>
-             <div className="mt-[70px] mb-[40px] pb-20 w-full h-[auto] md:mt-[60px]" style={{ backgroundColor: '#e2dedeff' }} id="">
+
+
+            {/* <Partner />
+            </div> */}
+            <div className="mt-[70px] mb-[40px] pb-20 w-full h-[auto] md:mt-[60px]" style={{ backgroundColor: '#e2dedeff' }} id="partner">
+
+                <Partner />
+            </div>
+            <div className="mt-[70px] mb-[80px] md:mt-[100px]" id="products">
+                <NewProducts />
+                {/* <Product /> */}
+            </div>
+            <div className="mt-[70px] mb-[40px] pb-20 w-full h-[auto] md:mt-[60px]" style={{ backgroundColor: '#e2dedeff' }} id="">
 
                 <Clients />
             </div>

@@ -14,13 +14,32 @@ function Partners() {
             url: 'https://www.milestonesrl.com/index.php/',
         },
         {
-            img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/ech.png',
-            url: 'https://ech.de/index.php/en/company'
-        },
-        {
             img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/5.png',
             url: 'https://www.stanhope-seta.co.uk/',
         },
+
+         {
+            img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/trace.png',
+            url: 'http://teinstruments.com/',
+        },
+
+        {
+            img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/11.png',
+            url: 'http://labtechsrl.com/#products'
+        },
+        {
+            img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/9.png',
+            url: 'https://orbisbv.com/#special',
+        },
+        {
+            img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/omnitec2.png',
+            url: 'https://omnitek.nl/'
+        },
+        {
+            img: 'https://www.ducom.com/hs-fs/hubfs/DUCOM/Logos/Ducom%20Logos/Ducom%20-%20Logo%20-%20Full%20-%20Vector%20(90%20Gray%20and%20Light%20Blue-Inverted)%20-%20PNG.png?width=1388&height=369&name=Ducom%20-%20Logo%20-%20Full%20-%20Vector%20(90%20Gray%20and%20Light%20Blue-Inverted)%20-%20PNG.png',
+            url: 'https://ech.de/index.php/en/company'
+        },
+        
 
         {
             img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/6.png',
@@ -30,27 +49,11 @@ function Partners() {
             img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/logo12.png',
             url: 'https://linseis.com/en/our-products/'
         },
-        {
-            img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/grsentific1.png',
-            url: 'https://www.grscientific.com/',
-        },
-        {
-            img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/trace.png',
-            url: 'http://teinstruments.com/',
-        },
-        {
-            img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/11.png',
-            url: 'http://labtechsrl.com/#products'
-        },
+       
+       
+        
 
-        {
-            img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/9.png',
-            url: 'https://orbisbv.com/#special',
-        },
-        {
-            img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/omnitec2.png',
-            url: 'https://omnitek.nl/'
-        },
+        
 
     ]
     return (
