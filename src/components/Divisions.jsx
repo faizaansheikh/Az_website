@@ -2,8 +2,8 @@ import { bgcolor } from '../utils'
 import React from 'react'
 import img from '../images/1.1.jpg'
 import img2 from '../images/2a.jpg'
-import img3 from '../images/2b.jpg'
-import img4 from '../images/2c.png'
+import img3 from '../images/sales.jpg'
+import img4 from '../images/service.jpg'
 import img5 from '../images/2d.png'
 import Image from 'next/image'
 function Divisions() {
@@ -14,7 +14,7 @@ function Divisions() {
             desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid voluptatem dolor,soluta voluptates temporibus iste, omnis facere animi assumenda eum voluptatum dolores distinctio harum mollitia ducimus et vero eaque quis?'
         },
         {
-            img: img3,
+            img: img4,
             title: 'Services',
             desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid voluptatem dolor,soluta voluptates temporibus iste, omnis facere animi assumenda eum voluptatum dolores distinctio harum mollitia ducimus et vero eaque quis?'
         },

@@ -53,7 +53,7 @@ const partners = [
 
     {
         img: orbis,
-        url: 'https://orbisbv.com/#special',
+        url: 'https://orbisbv.com',
         title: 'ORBIS BV',
         desc: 'Develop high end laboratory equipment that saves worldwide customers time and money while producing the best achievable test results'
     },

@@ -6,21 +6,37 @@ import { EditOutlined, EllipsisOutlined, EyeOutlined, MessageOutlined, SettingOu
 import { Avatar, Card, Tooltip } from 'antd';
 import { bgcolor } from '@/utils';
 import Carousel from 'react-multi-carousel';
+import img1 from '../images/machine/AutoREID imprimante web.png'
+import img2 from '../images/machine/Orbis__1-removebg-preview.png'
+import img3 from '../images/machine/Xplorer-V with Vectra and Computer.jpg'
+import img4 from '../images/machine/Petra SUPRA.jpg'
 // import { bgcolor } from ''';
 
 function NewProducts() {
     const products = [
         {
-            img: 'https://orbisbv.com/wp-content/uploads/2021/05/ColdBlock2.png',
+            img: img1,
             url: 'https://www.adsystems-sa.com/',
             title: 'AD Systems',
             desc: 'AD Systems specializes in the design, manufacturing, selling and servicing of unique test equipment for the evaluation of physical properties'
         },
+         {
+            img: img2,
+            url: 'https://orbisbv.com',
+            title: 'Orbis BV',
+            desc: 'Develop high end laboratory equipment that saves worldwide customers time and money while producing the best achievable test results'
+        },
         {
-            img: 'https://orbisbv.com/wp-content/uploads/2021/05/CFPP-Sep2.png',
-            url: 'https://www.milestonesrl.com/index.php/',
-            title: 'Milestone S.r.l. ',
-            desc: 'Milestone Helping Chemists Milestone has been active since 1988 in the field of advanced microwave sample preparation.'
+            img: img3,
+            url: 'http://teinstruments.com/',
+            title: 'Trace Elemental Instruments',
+            desc: 'Trace Elemental Instruments B.V., designs, develops, manufactures, markets, sells and supports a range of laboratory equipment '
+        },
+        {
+            img: img4,
+            url: 'https://www.xos.com/',
+            title: 'XOS',
+            desc: 'XOS specializes in the design, manufacturing, selling and servicing of unique test equipment for the evaluation of physical properties'
         },
         {
             img: 'https://orbisbv.com/wp-content/uploads/2021/05/CPPP-Sep2.png',
@@ -48,12 +64,7 @@ function NewProducts() {
             title: 'GR Scientific',
             desc: 'The very successful Aquamax KF takes its new place alongside the ECH AQUA 40.00 Karl Fischer product line'
         },
-        {
-            img: 'https://www.milestonesrl.com/templates/yootheme/cache/98/pyro-high-throughput-98233fef.png',
-            url: 'http://teinstruments.com/',
-            title: 'Trace Elemental Instruments',
-            desc: 'Trace Elemental Instruments B.V., designs, develops, manufactures, markets, sells and supports a range of laboratory equipment '
-        },
+        
         {
             img: 'https://www.milestonesrl.com/templates/yootheme/cache/63/duopur-6380111a.png',
             url: 'http://labtechsrl.com/#products',
@@ -98,16 +109,16 @@ function NewProducts() {
                 >
                     {
                         products.map((x, i) => (
-                            <div key={i} style={{ border: '2px solid grey', borderRadius: '10px' ,margin:'0px 10px 50px 10px'}}>
+                            <div key={i} style={{ border: '2px solid grey', borderRadius: '10px', margin: '0px 10px 50px 10px' }}>
                                 <Card
 
-                                    style={{  height: 380, marginBottom: '30px' }}
+                                    style={{ height: 380, marginBottom: '30px' }}
                                     className='shadow-2xl my-4'
                                     cover={
                                         <img
                                             alt="example"
-                                            src={x.img}
-                                            className='p-4 h-[190px] shadow'
+                                            src={typeof x.img === 'string' ? x.img : x.img.src}
+                                            className='p-0 h-[190px] shadow object-contain'
                                         />
                                     }
                                     actions={[

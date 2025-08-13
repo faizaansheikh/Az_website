@@ -53,7 +53,7 @@ function About() {
                 <NewProducts />
                 {/* <Product /> */}
             </div>
-            <div className="mt-[70px] mb-[40px] pb-20 w-full h-[auto] md:mt-[60px]" style={{ backgroundColor: '#e2dedeff' }} id="">
+            <div className="mt-[70px] mb-[40px] pb-20 w-full h-[auto] md:mt-[60px]" style={{ backgroundColor: '#e2dedeff' }} id="clients">
 
                 <Clients />
             </div>

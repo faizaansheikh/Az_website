@@ -5,6 +5,7 @@ import { RadiusBottomleftOutlined, CloseOutlined } from '@ant-design/icons'
 import { Drawer } from "antd";
 import { bgcolor } from "../utils";
 import './nav.css';
+import { GiHamburgerMenu } from "react-icons/gi";
 import { useRouter } from "next/navigation";
 import logo from '../images/AZ Logo.png'
 const Navbar = () => {
@@ -30,7 +31,7 @@ const Navbar = () => {
         { title: 'About Us', link: '#about' },
         { title: 'Partners', link: '#partner' },
         { title: 'Products', link: '#products' },
-        { title: 'Services', link: '#services' },
+        { title: 'Customers', link: '#clients' },
         { title: 'Careers', link: '/careers' },
         { title: 'Contact Us', link: '#contact' }
     ];
@@ -86,7 +87,7 @@ const Navbar = () => {
                     className="sm:flex justify-center items-center md:hidden cursor-pointer"
                     onClick={showDrawer}
                 >
-                    <RadiusBottomleftOutlined style={{ color: 'white', fontSize: '20px' }} color={'white'} size={20} />
+                    <GiHamburgerMenu style={{ color: 'black', fontSize: '20px' }} color={'white'} size={20} />
                     {/* <GiHamburgerMenu color={'white'} size={20} /> */}
                 </div>
             </div>
@@ -94,17 +95,17 @@ const Navbar = () => {
             <Drawer
                 title={
                     <div
-                        className="flex justify-between items-center p-2"
-                        style={{ backgroundColor: bgcolor }}
+                        className="flex justify-between items-center p-0"
+                        style={{ backgroundColor: '' }}
                     >
                         <img
-                            src="https://az-scientificsolutions.com/wp-content/uploads/2018/05/logo.png"
+                            src={typeof logo === 'string' ? logo : logo.src}
                             alt=""
                             width="200px"
                             height="150px"
                         />
                         <div onClick={onClose}>
-                            <CloseOutlined style={{ color: 'white', fontSize: '20px', margin: '5px', cursor: 'pointer' }} />
+                            <CloseOutlined style={{ color: 'black', fontSize: '20px', margin: '5px', cursor: 'pointer' }} />
                             {/* <IoCloseSharp  /> */}
                         </div>
                     </div>
