@@ -4,8 +4,9 @@ import Navbar from "../../components/Navbar";
 import MyButton from "../../components/MyButton";
 import './home.css'
 import { Carousel } from "antd";
-import img1 from '../../images/1.jpg'
-import img2 from '../../images/h2.jpg'
+import img from '../../images/wind_1.jpg'
+import img1 from '../../images/wind_2.jpg'
+import img2 from '../../images/wind_3.jpg'
 import img3 from '../../images/h3.jpg'
 // import img4 from '../../images/h4.jpg'
 import img4 from '../../images/industrial.jpg'
@@ -14,12 +15,16 @@ import Image from "next/image";
 const Home = () => {
   const images = [
     {
+      img: img,
+      // title: 'Scientific Solutions'
+    },
+    {
       img: img1,
       // title: 'Scientific Solutions'
     },
     {
       img: img2,
-      title: 'Innovative Research Services'
+
     },
 
     {
@@ -49,7 +54,7 @@ const Home = () => {
     // background: '#364d79',
   };
   return (
-   
+
     <div>
       <div className="z-60">
         <Navbar />
@@ -73,7 +78,7 @@ const Home = () => {
 
               {/* Content over the image */}
               <div className="absolute top-0 left-0  w-full h-full flex flex-col justify-center items-center text-white px-4 z-20" data-aos='fade-right'>
-                {i > 0 && <div>
+                {x.title && <div>
                   <p className="text-2xl md:text-4xl py-4">We provide</p>
                 </div>}
 
