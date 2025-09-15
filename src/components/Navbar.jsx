@@ -55,7 +55,7 @@ const Navbar = () => {
     return (
         <>
             <div
-                className={`fixed top-0 left-0 right-0 z-60 flex justify-between items-center py-2 px-4 transition-all duration-300 border-grey/50 
+                className={`fixed top-0 left-0 right-0 z-[2000] flex justify-between items-center py-2 px-4 transition-all duration-300 border-grey/50 
                     }`}
                 style={{ backgroundColor: 'white' }}
             >

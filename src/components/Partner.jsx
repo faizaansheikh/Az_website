@@ -16,70 +16,70 @@ const partners = [
         img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/ad-system.png',
         url: 'https://www.adsystems-sa.com/',
         title: 'AD Systems',
-        desc: 'AD Systems specializes in the design, manufacturing, selling and servicing of unique test equipment for the evaluation of physical properties'
+        desc: 'Specialized in automation with unique features in petroleum equipment'
     },
     {
         img: xos,
         url: 'https://www.adsystems-sa.com/',
         title: 'XOS',
-        desc: 'XOS specializes in the design, manufacturing, selling and servicing of unique test equipment for the evaluation of physical properties'
+        desc: 'Specialized in manufacturing of X-Ray based analyzers.'
     },
     {
         img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/milestone.png',
         url: 'https://www.milestonesrl.com/index.php/',
         title: 'Milestone S.r.l. ',
-        desc: 'Milestone Helping Chemists Milestone has been active since 1988 in the field of advanced microwave sample preparation.'
+        desc: 'Specialized in advance microwave sample preparation.'
     },
     
     {
         img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/5.png',
         url: 'https://www.stanhope-seta.co.uk/',
         title: ' Stanhope-Seta',
-        desc: 'Stanhope-Seta design and manufacture quality control instruments used to measure the physical characteristics that determine product quality and consistency.'
+        desc: 'A worldwide benchmark for quality control instrumentation.'
     },
 
 {
         img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/trace.png',
         url: 'http://teinstruments.com/',
         title: 'Trace Elemental',
-        desc: 'Trace Elemental Instruments B.V., designs, develops, manufactures, markets, sells and supports a range of laboratory equipment '
+        desc: 'Manufacturer of combustion analyzers for industrial and environmental testing.'
     },
     {
         img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/11.png',
         url: 'http://labtechsrl.com/#products',
         title: 'Lab Tech Srl.',
-        desc: 'LabTech is a leading manufacturing company with skill and passion devoted to provide advanced laboratory solutions'
+        desc: 'Your Reliable Laboratory Solution Provider.'
     },
 
     {
         img: orbis,
         url: 'https://orbisbv.com',
         title: 'ORBIS BV',
-        desc: 'Develop high end laboratory equipment that saves worldwide customers time and money while producing the best achievable test results'
+        desc: 'Manufacturers of automatic petroleum testing equipments'
     },
     {
         img: omni,
         url: 'https://omnitek.nl/',
         title: 'Omni Tech',
-        desc: 'OmniTek provides fully automatic kinematic viscosity instrumentation compliant with ASTM 445/446, ASTM D7279 (Houillon)'
+        desc: 'Manufactures state of the art  automatic viscometers'
     },
     {
         img: ducom,
         url: 'https://omnitek.nl/',
         title: 'Ducom',
-        desc: 'OmniTek provides fully automatic kinematic viscosity instrumentation compliant with ASTM 445/446, ASTM D7279 (Houillon)'
+        desc: 'Next-generation testers for tribology, mechanical and petroleum testing'
     },
     {
         img: linsis,
         url: 'https://linseis.com/en/our-products/',
         title: 'Linseis Thermal  ',
-        desc: 'More than 60 years ago LINSEIS started the production of thermal analysis recorders and instruments'
+        desc: 'Manufacturer of measuring instruments for thermal analysis and the investigation of thermophysical properties for materials research.'
     },
     {
         img: paltro,
         url: 'https://omnitek.nl/',
         title: 'Paltro',
-        desc: 'Paltro provides fully automatic kinematic viscosity instrumentation compliant with ASTM 445/446, ASTM D7279 (Houillon)'
+        desc: 'Building industry leading robotic test platforms'
     },
     
     
