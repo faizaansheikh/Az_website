@@ -132,6 +132,22 @@ function NewProducts() {
 
 
     ]
+    const openGmailCompose = () => {
+
+        const params = new URLSearchParams({
+            to: 'info@az-scientificsolutions.com',
+            su: "From Az Scientific Solutions",
+            body: `Asking about Quotation`,
+            cc: "",
+            bcc: "",
+            fs: "1",   // full screen compose
+            view: "cm" // compose view
+        });
+
+        const url = `https://mail.google.com/mail/?${params.toString()}`;
+        // Open in new tab
+        window.open(url, "_blank", "noopener,noreferrer");
+    };
     return (
         <div className='mx-[30px] md:mx-[100px] lg:mx-[200px]'>
             <h2 className='text-4xl md:text-5xl text-center  pt-20 pb-4 mb-15' style={{ borderBottom: `2px solid ${bgcolor}` }}>Our Products</h2>
@@ -180,11 +196,11 @@ function NewProducts() {
                                         />
                                     }
                                     actions={[
-                                        <Tooltip title='Request Quotation' >
-                                            <a href={'info@az-scientificsolutions.com'} target='_black'>
+                                        <Tooltip title='Request Quotation' onClick={openGmailCompose}>
 
-                                                <MessageOutlined key="setting" classID='' style={{ color: bgcolor, fontSize: '17px', paddingBottom: '' }} />
-                                            </a>
+
+                                            <MessageOutlined key="setting" classID='' style={{ color: bgcolor, fontSize: '17px', paddingBottom: '' }} />
+
                                         </Tooltip>,
                                         <Tooltip title='View' >
                                             <a href={x.url} target='_black'>
