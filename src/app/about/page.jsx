@@ -1,12 +1,7 @@
 'use client';
 import GlassEffect from '../../components/GlassEffect'
 import React from 'react'
-import Expertise from './Expertise'
-import { bgcolor } from '../../utils'
-import KeyClients from './KeyClients'
-import Management from './Management'
-import TechnicaService from './TechnicaService'
-import OurVision from '../../components/OurVision';
+
 import Divisions from '../../components/Divisions';
 import Clients from '@/components/Clients';
 import NewProducts from '@/components/NewProducts';

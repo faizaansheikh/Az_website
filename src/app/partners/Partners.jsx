@@ -1,8 +1,5 @@
 
 import React from 'react'
-import img from '../../images/home.jpg'
-import Image from 'next/image';
-import { bgcolor } from '../../utils';
 function Partners() {
     const partners = [
         {

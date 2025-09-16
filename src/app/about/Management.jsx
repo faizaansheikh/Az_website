@@ -1,6 +1,5 @@
 import React from 'react'
 import { Card } from 'antd'
-import img from '../../images/home.jpg'
 import Image from 'next/image';
 import { bgcolor } from '../../utils';
 function Management() {

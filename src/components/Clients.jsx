@@ -1,11 +1,7 @@
 'use client'
 import { bgcolor } from '@/utils'
-import React, { useState } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import img from '../images/home.jpg'
-import Image from 'next/image';
+import React from 'react';
 import Carousel from 'react-multi-carousel';
-import GlassEffect from './GlassEffect';
 import img1 from '../images/clients/pso.png'
 import img2 from '../images/clients/parco.png'
 import img3 from '../images/clients/papco.png'

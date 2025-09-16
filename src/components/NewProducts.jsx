@@ -5,7 +5,7 @@ import { EyeOutlined, MessageOutlined } from '@ant-design/icons';
 import { Card, Tooltip } from 'antd';
 import { bgcolor } from '@/utils';
 import Carousel from 'react-multi-carousel';
-import img4 from '../images/machine/Petra SUPRA.jpg';
+import img4 from '../images/Petra SUPRA.jpg';
 function NewProducts() {
     const products = [
         {

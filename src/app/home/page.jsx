@@ -7,7 +7,6 @@ import { Carousel } from "antd";
 import img from '../../images/wind_1.jpg'
 import img1 from '../../images/wind_2.jpg'
 import img2 from '../../images/wind_3.jpg'
-import img3 from '../../images/h3.jpg'
 // import img4 from '../../images/h4.jpg'
 import img4 from '../../images/industrial.jpg'
 
