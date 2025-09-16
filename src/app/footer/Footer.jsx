@@ -17,7 +17,7 @@ function Footer() {
         <div>
             <div
                 style={{ backgroundColor: bgcolor }}
-                className="w-full h-auto text-white py-12   flex flex-wrap justify-around items-start"
+                className="w-full h-auto text-white py-12   flex flex-col md:flex-row flex-wrap justify-around items-start pl-12 md:pl-0"
             >
                 {/* <div className="w-full flex flex-wrap"> */}
                 {/* Left Side: Contact Info */}
@@ -28,7 +28,7 @@ function Footer() {
 
 
                 <div>
-                    <h2 className="text-2xl md:text-4xl mb-6">Address</h2>
+                    <h2 className="text-2xl md:text-4xl mb-4">Address</h2>
                     <h2>Head Office:</h2>
                     <p>Suit 1, Osama Heaven,</p>
                     <p>Plot No, A-137-138,</p>
@@ -39,8 +39,8 @@ function Footer() {
                 </div>
 
                
-                <div className=''>
-                    <h2 className="text-2xl md:text-3xl mb-6">Quick Links</h2>
+                <div className='w-[247px] pb-6 md:pb-0'>
+                    <h2 className="text-2xl md:text-3xl mb-4">Quick Links</h2>
                     <ul>
                         {menu.map((x, i) => (
                             <a href={x.link} key={i} className=''>
@@ -59,7 +59,7 @@ function Footer() {
                 </div>
 
                 <div className=''>
-                    <h2 className="text-2xl md:text-4xl mb-6">Contact Us</h2>
+                    <h2 className="text-2xl md:text-4xl mb-4">Contact Us</h2>
                     <h2>Info:</h2>
                     <p>Email: info@az-scientificsolutions.com</p>
                     <p>Tel: +92-21-34965714</p>
