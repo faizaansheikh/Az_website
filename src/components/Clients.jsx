@@ -48,25 +48,18 @@ function Clients() {
 
     ];
 
-    const [currentIndex, setCurrentIndex] = useState(0);
+    
 
-    const handlePrev = () => {
-        setCurrentIndex((prev) => (prev - 1 + items.length) % items.length);
-    };
-
-    const handleNext = () => {
-        setCurrentIndex((prev) => (prev + 1) % items.length);
-    };
-    console.log('load');
 
     return (
         <div className='lg:mx-[200px] '>
-            <h2 className='text-4xl md:text-5xl text-center  pt-20 pb-4 mb-3' >Our Customers</h2>
-            <p className='text-center text-md px-4 md:mx-0 md:text-xl pb-6 mb-6' style={{ borderBottom: `2px solid ${bgcolor}` }}>
+               <h2 className='text-4xl md:text-5xl text-center  pt-20 pb-4 mb-10' style={{ borderBottom: `2px solid ${bgcolor}` }}>Our Valued Customers</h2>
+            
+            {/* <p className='text-center text-md px-4 md:mx-0 md:text-xl pb-6 mb-6' style={{ borderBottom: `2px solid ${bgcolor}` }}>
                 We have business partnership with a number of premier manufacturers and suppliers of scientific instrumentation around the globe.
                 We are fully capable of meeting the challenges of providing scientific solutions to laboratories with latest technology, instrumentation
                 and services in the technical, medical and industrial fields.
-            </p>
+            </p> */}
             <Carousel
                 arrows
                 autoPlaySpeed={3000}

@@ -24,23 +24,6 @@ function Divisions() {
             desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid voluptatem dolor,soluta voluptates temporibus iste, omnis facere animi assumenda eum voluptatum dolores distinctio harum mollitia ducimus et vero eaque quis?'
         },
 
-
-        // {
-        //     img: img4,
-        //     title: 'Education',
-        //     desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid voluptatem dolor,soluta voluptates temporibus iste, omnis facere animi assumenda eum voluptatum dolores distinctio harum mollitia ducimus et vero eaque quis?'
-        // },
-
-        // {
-        //     img: img5,
-        //     title: 'Scientific',
-        //     desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid voluptatem dolor,soluta voluptates temporibus iste, omnis facere animi assumenda eum voluptatum dolores distinctio harum mollitia ducimus et vero eaque quis?'
-        // },
-        // {
-        //     img: img4,
-        //     title: 'Energy',
-        //     desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid voluptatem dolor,soluta voluptates temporibus iste, omnis facere animi assumenda eum voluptatum dolores distinctio harum mollitia ducimus et vero eaque quis?'
-        // },
         {
             img: img,
             title: 'Project',
@@ -48,8 +31,31 @@ function Divisions() {
         },
 
     ]
+    const openGmailCompose = (title) => {
+        const sendTo = () => {
+            if (title === 'Sales & Marketing') {
+                return 'zd@az-scientificsolutions.com'
+            } else if (title === 'Services' || title === 'Application') {
+                return 'sr@az-scientificsolutions.com'
+            } else {
+                return 'su@az-scientificsolutions.com'
+            }
+        }
+        const params = new URLSearchParams({
+            to: sendTo(),
+            su: "From Az Scientific Solutions Divisions",
+            body: `Asking about ${title} division`,
+            cc: "",
+            bcc: "",
+            fs: "1",   // full screen compose
+            view: "cm" // compose view
+        });
 
-    // rounded-l-[60px] md:rounded-l-[150px]
+        const url = `https://mail.google.com/mail/?${params.toString()}`;
+        // Open in new tab
+        window.open(url, "_blank", "noopener,noreferrer");
+    };
+
     return (
         <div className='lg:mx-[200px] '>
             <h2 className='text-4xl md:text-5xl text-center  pt-20 pb-4 mb-6' style={{ borderBottom: `2px solid ${bgcolor}` }}>Divisions</h2>
@@ -62,7 +68,7 @@ function Divisions() {
 
                     {i % 2 === 0 ? (
                         <>
-                            <div data-aos={'fade-top'} className="group relative w-full h-[350px] md:h-[290px] border-1 border-black rounded-l-[10px]  cursor-pointer overflow-hidden bg-[black] shadow-2xl shadow-black z-20">
+                            <div data-aos={'fade-top'} className="group relative w-full h-[350px] md:h-[290px] border-1 border-black rounded-l-[10px]  cursor-pointer overflow-hidden bg-[black] shadow-2xl shadow-black z-20" onClick={() => openGmailCompose(x.title)}>
                                 {/* Background Image */}
                                 <Image
                                     src={x.img}
@@ -76,9 +82,9 @@ function Divisions() {
                                     <h1 className="text-2xl md:text-5xl font-bold mb-2 transition-all duration-500 md:group-hover:-translate-y-2">
                                         {x.title} <br /> Division
                                     </h1>
-                                    <p className="text-[12px] lg:text-[17px] mt-2 text-start md:text-center md:hidden md:px-4 group-hover:block opacity-100 translate-y-0 md:opacity-0 md:translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-500">
+                                    {/* <p className="text-[12px] lg:text-[17px] mt-2 text-start md:text-center md:hidden md:px-4 group-hover:block opacity-100 translate-y-0 md:opacity-0 md:translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-500">
                                         {x.desc}
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>
                             <div className="w-full h-[300px]" />
@@ -86,7 +92,7 @@ function Divisions() {
                     ) : (
                         <>
                             <div className="w-full h-[300px]" />
-                            <div data-aos={'fade-top'} className="group relative w-full h-[350px] md:h-[290px] border-1 border-black rounded-r-[10px]  cursor-pointer overflow-hidden bg-[black] shadow-2xl shadow-black z-20">
+                            <div data-aos={'fade-top'} className="group relative w-full h-[350px] md:h-[290px] border-1 border-black rounded-r-[10px]  cursor-pointer overflow-hidden bg-[black] shadow-2xl shadow-black z-20" onClick={() => openGmailCompose(x.title)}>
                                 {/* Background Image */}
                                 <Image
                                     src={x.img}
@@ -100,9 +106,9 @@ function Divisions() {
                                     <h1 className="text-2xl md:text-5xl font-bold mb-2 transition-all duration-500 md:group-hover:-translate-y-2">
                                         {x.title} <br /> Division
                                     </h1>
-                                    <p className="text-[12px] lg:text-[17px] mt-2 text-start md:text-center md:hidden md:px-4 group-hover:block opacity-100 translate-y-0 md:opacity-0 md:translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-500">
+                                    {/* <p className="text-[12px] lg:text-[17px] mt-2 text-start md:text-center md:hidden md:px-4 group-hover:block opacity-100 translate-y-0 md:opacity-0 md:translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-500">
                                         {x.desc}
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>
                         </>

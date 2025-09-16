@@ -30,7 +30,7 @@ const partners = [
         title: 'Milestone S.r.l. ',
         desc: 'Specialized in advance microwave sample preparation.'
     },
-    
+
     {
         img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/5.png',
         url: 'https://www.stanhope-seta.co.uk/',
@@ -38,7 +38,7 @@ const partners = [
         desc: 'A worldwide benchmark for quality control instrumentation.'
     },
 
-{
+    {
         img: 'https://az-scientificsolutions.com/wp-content/uploads/2018/05/trace.png',
         url: 'http://teinstruments.com/',
         title: 'Trace Elemental',
@@ -81,8 +81,8 @@ const partners = [
         title: 'Paltro',
         desc: 'Building industry leading robotic test platforms'
     },
-    
-    
+
+
 
 ]
 
@@ -119,15 +119,15 @@ const Partner = () => {
             >
                 {
                     partners.map((x, i) => (
-                        <div  key={i} className=''>
+                        <div key={i} className=''>
                             <Card
-                                onClick={()=>window.open(x.url)}
-                                style={{  weight:230,height: 330, border: '2px solid grey' ,margin:'10px 10px 50px 10px'}}
+                                onClick={() => window.open(x.url)}
+                                style={{ weight: 230, height: 330, border: '2px solid grey', margin: '10px 10px 50px 10px' }}
                                 className='shadow-2xl cursor-pointer hover:scale-106 z-80 transition-transform duration-300 '
                                 cover={
                                     <img
                                         alt="example"
-                                       src={typeof x.img === 'string' ? x.img : x.img.src}
+                                        src={typeof x.img === 'string' ? x.img : x.img.src}
                                         className='p-6 h-[150px] shadow'
                                     />
                                 }
@@ -148,7 +148,7 @@ const Partner = () => {
                             >
                                 <h3 className='text-xl font-[500]'>{x.title}</h3>
                                 <p className='text-sm mt-2 flex-grow overflow-hidden h-[80px]'>{x.desc}</p>
-                                
+
 
                             </Card>
                         </div>

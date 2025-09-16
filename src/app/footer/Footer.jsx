@@ -25,9 +25,9 @@ function Footer() {
                 {/* <div className="flex flex-row justify-start items-center text-white py-12 
                         
                           "> */}
-               
 
-                  <div>
+
+                <div>
                     <h2 className="text-2xl md:text-4xl mb-6">Address</h2>
                     <h2>Head Office:</h2>
                     <p>Suit 1, Osama Heaven,</p>
@@ -38,35 +38,18 @@ function Footer() {
 
                 </div>
 
-                {/* <div>
-                    <h2 className="text-2xl md:text-3xl mb-6">Site Map</h2>
-                    <ul>
-                        {site.map((x, i) => (
-                            <a href={x.link} key={i} className='flex justify-start items-start'>
-                                <p
-                                    className={`list-none px-4 py-1 text-[17px] relative nav-list cursor-pointer text-white
-                                }`}
-                                    onClick={() => handleLinks(x)}
-                                >
-                                    {x.title}
-                                </p>
-                            </a>
-
-                        ))}
-                    </ul>
-
-                </div> */}
-                <div className='w-[247px] pb-6 md:pb-0'>
+               
+                <div className=''>
                     <h2 className="text-2xl md:text-3xl mb-6">Quick Links</h2>
                     <ul>
                         {menu.map((x, i) => (
                             <a href={x.link} key={i} className=''>
                                 <li
                                     className={`
-                                }`} 
-                                    // onClick={() => handleLinks(x)}
+                                }`}
+                                // onClick={() => handleLinks(x)}
                                 >
-                                  {x.title}
+                                    {x.title}
                                 </li>
                             </a>
 
@@ -75,7 +58,7 @@ function Footer() {
 
                 </div>
 
-                <div className='ml-6'>
+                <div className=''>
                     <h2 className="text-2xl md:text-4xl mb-6">Contact Us</h2>
                     <h2>Info:</h2>
                     <p>Email: info@az-scientificsolutions.com</p>
@@ -83,11 +66,7 @@ function Footer() {
                     <p>Fax: +92-21-34965714</p>
 
                 </div>
-                {/* </div> */}
-                {/* flex-grow md:flex-[4]  md:w-2/3 */}
-                {/* Right Side: Map */}
-
-                {/* </div> */}
+            
             </div>
             <div
                 className=" w-[full]  h-[300px] md:h-[350px]"
